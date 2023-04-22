@@ -60,6 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="4333_Eremin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="4333_Gibadulllina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -69,7 +73,7 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="4333_Sagitova.xaml">
-    <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
@@ -78,6 +82,9 @@
     </Page>
     <Compile Include="4333_Davliev.xaml.cs">
       <DependentUpon>4333_Davliev.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4333_Eremin.xaml.cs">
+      <DependentUpon>4333_Eremin.xaml</DependentUpon>
     </Compile>
     <Compile Include="4333_Gibadulllina.xaml.cs">
       <DependentUpon>4333_Gibadulllina.xaml</DependentUpon>
