@@ -50,5 +50,11 @@ namespace Template_4333
             dinar.Show();
             this.Hide();
         }
+
+        private void eremin_Click_1(object sender, RoutedEventArgs e)
+        {
+            _4333_Eremin eremin = new _4333_Eremin();
+            eremin.Show();
+        }
     }
 }
