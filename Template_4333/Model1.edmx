@@ -5,50 +5,50 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="Хранилище isrpoModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="isrpolab">
+        <EntityType Name="isrpotable">
           <Key>
             <PropertyRef Name="КодСотрудника" />
           </Key>
           <Property Name="КодСотрудника" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Должность" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="ФИО" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Логин" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Пароль" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="ПоследнийВход" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="ТипВхода" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Должность" Type="nvarchar" MaxLength="50" />
+          <Property Name="ФИО" Type="nvarchar" MaxLength="50" />
+          <Property Name="Логин" Type="nvarchar" MaxLength="50" />
+          <Property Name="Пароль" Type="nvarchar" MaxLength="50" />
+          <Property Name="ПоследнийВход" Type="nvarchar" MaxLength="50" />
+          <Property Name="ТипВхода" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="Хранилище isrpoModelContainer">
-          <EntitySet Name="isrpolab" EntityType="Self.isrpolab" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="isrpotable" EntityType="Self.isrpotable" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="isrpoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="isrpolab">
+        <EntityType Name="isrpotable">
           <Key>
             <PropertyRef Name="КодСотрудника" />
           </Key>
           <Property Name="КодСотрудника" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Должность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ФИО" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Логин" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ПоследнийВход" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ТипВхода" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Должность" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ФИО" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Логин" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Пароль" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ПоследнийВход" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ТипВхода" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="isrpo2Entities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="isrpolab" EntityType="Self.isrpolab" />
+        <EntityContainer Name="isrpoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="isrpotable" EntityType="Self.isrpotable" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище isrpoModelContainer" CdmEntityContainer="isrpo2Entities">
-          <EntitySetMapping Name="isrpolab">
-            <EntityTypeMapping TypeName="isrpoModel.isrpolab">
-              <MappingFragment StoreEntitySet="isrpolab">
+        <EntityContainerMapping StorageEntityContainer="Хранилище isrpoModelContainer" CdmEntityContainer="isrpoEntities">
+          <EntitySetMapping Name="isrpotable">
+            <EntityTypeMapping TypeName="isrpoModel.isrpotable">
+              <MappingFragment StoreEntitySet="isrpotable">
                 <ScalarProperty Name="КодСотрудника" ColumnName="КодСотрудника" />
                 <ScalarProperty Name="Должность" ColumnName="Должность" />
                 <ScalarProperty Name="ФИО" ColumnName="ФИО" />
