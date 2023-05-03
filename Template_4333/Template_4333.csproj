@@ -140,7 +140,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="isrpotable.cs">
+    <Compile Include="isrpolab.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">

@@ -12,7 +12,7 @@ namespace Template_4333
     using System;
     using System.Collections.Generic;
     
-    public partial class isrpotable
+    public partial class isrpolab
     {
         public string КодСотрудника { get; set; }
         public string Должность { get; set; }
